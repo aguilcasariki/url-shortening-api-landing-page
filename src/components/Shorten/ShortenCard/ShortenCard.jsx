@@ -12,8 +12,8 @@ const ShortenCard = ({ originalLink, shortenLink }) => {
 };
 
 ShortenCard.propTypes = {
-  originalLink: PropTypes.string.isRequired,
-  shortenLink: PropTypes.string.isRequired,
+  originalLink: PropTypes.string,
+  shortenLink: PropTypes.string,
 };
 
 export default ShortenCard;

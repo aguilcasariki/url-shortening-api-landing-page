@@ -1,5 +1,6 @@
 :root {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
 }
 @tailwind base;
 @tailwind components;
