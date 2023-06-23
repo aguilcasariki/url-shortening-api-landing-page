@@ -1,4 +1,4 @@
-import ShortenCard from "../ShortenCard/ShortenCard";
+import ShortenCard from "./ShortenCard/ShortenCard";
 
 const Shorten = () => {
   return (
