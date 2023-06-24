@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="nav_wrapper flex flex-col items-center w-screen">
       <nav className="navbar w-full">
-        <div className="container flex  justify-between p-5 items-end">
+        <div className="container flex  justify-between p-5 pb-3 items-end">
           <Logo />
           <div className="menu">
             <button
@@ -22,7 +22,7 @@ const Navbar = () => {
             >
               <svg
                 viewBox="0 0 24 24"
-                className={`flex flex-col justify-center items-center h-8 w-8 focus:outline-none ${
+                className={`flex flex-col justify-center items-center h-7 w-7 focus:outline-none ${
                   isMenuOpen ? "text-grayish-violet" : " text-gray"
                 }`}
               >
