@@ -3,6 +3,10 @@
   font-size: 1.125rem;
   color: hsl(257, 7%, 63%);
 }
+
+a {
+  display: inline-block;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
