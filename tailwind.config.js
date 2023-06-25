@@ -2,8 +2,21 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "bg-boost-desktop": "url('./src/assets/bg-boost-desktop.svg')",
+        "bg-shorten-desktop": "url('./src/assets/bg-shorten-desktop.svg')",
+        "bg-boost-mobile": "url('./src/assets/bg-boost-mobile.svg')",
+        "bg-shorten-mobile": "url('./src/assets/bg-shorten-mobile.svg')",
+      },
+    },
+    backgroundPosition: {
+      "boost-position": "2.5rem -3.5rem",
+
+      "shorten-position": "2.5rem -3.5rem",
+    },
     colors: {
+      "bg-app": "#F0F1F6",
       white: "#ffffff",
       cyan: "hsl(180, 66%, 49%)",
       "dark-violet": "hsl(257, 27%, 26%)",

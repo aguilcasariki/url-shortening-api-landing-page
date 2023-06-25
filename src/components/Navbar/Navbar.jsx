@@ -53,7 +53,7 @@ const Navbar = () => {
                   {e}
                 </a>
                 {i === 2 && (
-                  <hr className="w-full border-0 border-t-[1px] border-grayish-violet mt-5" />
+                  <hr className="w-full border-0 border-t-[1px] border-gray mt-5" />
                 )}
               </li>
             ))}

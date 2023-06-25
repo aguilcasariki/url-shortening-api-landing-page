@@ -6,13 +6,13 @@ import Statics from "../components/Statics/Statics";
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-bg-app">
       <Navbar />
       <Hero />
       <Shorten />
       <Statics />
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -11,7 +11,7 @@ const Hero = () => {
         />
         <div className="hero_info px-5 flex flex-col items-center mt-6">
           <h1 className="hero_title text-3xl text-center font-bold text-very-dark-violet">
-            More than just shorten links
+            More than just shorter links
           </h1>
           <p className="hero_description text-sm text-center leading-5 mt-2">
             Build your brand s recognition and get detailed insights and how
