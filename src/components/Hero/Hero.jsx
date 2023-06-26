@@ -3,13 +3,16 @@ import HeroImg from "../../../src/assets/illustration-working.svg";
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero_wrapper overflow-hidden md:bg-white">
-        <img
-          src={HeroImg}
-          alt="Working Illustration"
-          className="hero_img max-w-[132vw] ms-4"
-        />
-        <div className="hero_info px-5 flex flex-col items-center mt-6 text-center ">
+      <div className="hero_wrapper overflow-hidden bg-white md:flex-row-reverse md:flex md:pt-7 md:pb-20">
+        <div className="hero_img_container">
+          <img
+            src={HeroImg}
+            alt="Working Illustration"
+            className="hero_img max-w-[132vw] md:max-w-[50vw] ms-4 md:-me-16 md:ms-0 "
+          />
+        </div>
+
+        <div className="hero_info px-5 md:px-0 md:ms-16 md:items-start flex flex-col items-center mt-6 md:justify-center md:pe-4">
           <h1 className="hero_title text-3xl font-bold text-very-dark-violet">
             More than just shorter links
           </h1>
