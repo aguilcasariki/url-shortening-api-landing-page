@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           ))}
         </ul>
-        <ul className="flex bg-black justify-between w-100 mt-5">
+        <ul className="flex bg-black justify-between w-full mt-5">
           {mediaLinks.map((e, i) => (
             <li key={i}>
               <a href="">

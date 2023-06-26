@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav_wrapper flex flex-col items-center bg-white md:px-14">
+    <div className="nav_wrapper flex flex-col items-center bg-white md:px-16 pt-5 px-5 pb-3">
       <nav className="navbar w-full">
-        <div className="nabvar_container flex  md:justify-normal justify-between p-5 pb-3 items-end">
+        <div className="nabvar_container flex  md:justify-normal justify-between items-end">
           <Logo />
           <div className="navbar_menu hidden md:flex w-full ps-7">
             <MenuLinkList />

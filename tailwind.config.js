@@ -4,16 +4,17 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "bg-boost-desktop": "url('./src/assets/bg-boost-desktop.svg')",
-        "bg-shorten-desktop": "url('./src/assets/bg-shorten-desktop.svg')",
-        "bg-boost-mobile": "url('./src/assets/bg-boost-mobile.svg')",
-        "bg-shorten-mobile": "url('./src/assets/bg-shorten-mobile.svg')",
+        "boost-desktop": "url('./src/assets/bg-boost-desktop.svg')",
+        "shorten-desktop": "url('./src/assets/bg-shorten-desktop.svg')",
+        "boost-mobile": "url('./src/assets/bg-boost-mobile.svg')",
+        "shorten-mobile": "url('./src/assets/bg-shorten-mobile.svg')",
       },
     },
     backgroundPosition: {
-      "boost-position": "0rem -0.8rem",
+      "position-boost": "0rem -0.8rem",
 
-      "shorten-position": "2.5rem -3.5rem",
+      "position-shorten": "2.5rem -3.5rem",
+      "position-none": "unset",
     },
     colors: {
       "bg-app": "#F0F1F6",
