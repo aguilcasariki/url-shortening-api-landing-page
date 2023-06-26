@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Logo from "../Logo/Logo";
+import MenuLinkList from "../MenuLinkList/MenuLinkList";
 
 const Navbar = () => {
-  const serviceLinks = ["Features", "Pricing", "Resources", "Login"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -10,11 +10,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav_wrapper flex flex-col items-center">
+    <div className="nav_wrapper flex flex-col items-center md:bg-white md:px-14">
       <nav className="navbar w-full">
-        <div className="container flex  justify-between p-5 pb-3 items-end">
+        <div className="nabvar_container flex  md:justify-normal justify-between p-5 pb-3 items-end">
           <Logo />
-          <div className="menu">
+          <div className="navbar_menu hidden md:flex w-full ps-7">
+            <MenuLinkList />
+          </div>
+
+          <div className="navbar_btn md:hidden">
             <button
               type="button"
               className="flex flex-col justify-center items-center h-8 w-8 focus:outline-none"
@@ -41,26 +45,12 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`menu_container ${
+        className={`menu_container md:hidden ${
           isMenuOpen ? " max-h-96 " : " max-h-0"
         } transition-max-h w-full overflow-hidden duration-1000 ease-in-out bg-white font-bold absolute top-[80px] px-5`}
       >
-        <div className="menu_card bg-dark-violet text-white rounded-md p-7 pt-2">
-          <ul className="menu_links   flex flex-col items-center">
-            {serviceLinks.map((e, i) => (
-              <li key={i} className="service_link w-full text-center mt-5">
-                <a href="#" key={i}>
-                  {e}
-                </a>
-                {i === 2 && (
-                  <hr className="w-full border-0 border-t-[1px] border-gray mt-5" />
-                )}
-              </li>
-            ))}
-            <button className="signin_button mt-5 rounded-full bg-cyan w-full py-2">
-              Sign Up
-            </button>
-          </ul>
+        <div className="menu_card bg-dark-violet   rounded-md p-7 pt-2 ">
+          <MenuLinkList />
         </div>
       </div>
     </div>

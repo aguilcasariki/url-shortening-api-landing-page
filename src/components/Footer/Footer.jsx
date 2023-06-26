@@ -34,22 +34,24 @@ const mediaLinks = [
 ];
 const Footer = () => {
   return (
-    <section className="footer">
-      <div className="footer_container">
-        <Logo />
+    <section className="footer  bg-very-dark-violet">
+      <div className="footer_container  text-center flex-col flex items-center bg-very-dark-violet py-10 text-xs px-16">
+        <Logo color="#ffffff" />
         <ul>
           {serviceLinks.map((e, i) => (
-            <div key={i} className="mt-3">
-              <h2>{e.title}</h2>
+            <div key={i} className="mt-7">
+              <h2 className="service_title font-bold text-white mb-4">
+                {e.title}
+              </h2>
               {e.links.map((e, i) => (
-                <li key={i} className="">
+                <li key={i} className="service_link mb-2">
                   <a href="">{e}</a>
                 </li>
               ))}
             </div>
           ))}
         </ul>
-        <ul className="flex bg-black">
+        <ul className="flex bg-black justify-between w-100 mt-5">
           {mediaLinks.map((e, i) => (
             <li key={i}>
               <a href="">

@@ -11,7 +11,7 @@ export default {
       },
     },
     backgroundPosition: {
-      "boost-position": "2.5rem -3.5rem",
+      "boost-position": "0rem -0.8rem",
 
       "shorten-position": "2.5rem -3.5rem",
     },

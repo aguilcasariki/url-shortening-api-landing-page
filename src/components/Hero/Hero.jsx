@@ -3,7 +3,7 @@ import HeroImg from "../../../src/assets/illustration-working.svg";
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero_wrapper overflow-hidden">
+      <div className="hero_wrapper overflow-hidden md:bg-white">
         <img
           src={HeroImg}
           alt="Working Illustration"

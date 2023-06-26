@@ -33,18 +33,21 @@ const Statics = () => {
           statistics dashboard.
         </p>
       </div>
-      <div className="cards_container flex flex-col items-center mt-14 px-5">
+      <div className="mt-14">
         {cardData.map((e, i) => (
-          <>
+          <div
+            key={i}
+            className="cards_container flex flex-col items-center  px-5"
+          >
             {i !== 0 && (
               <div className="cards_separator w-1 bg-cyan h-16"></div>
             )}
             <StaticsCard data={e} key={i} />
-          </>
+          </div>
         ))}
       </div>
 
-      <div className="boost_container mt-14 bg-bg-boost-mobile bg-dark-violet px-5 py-16">
+      <div className="boost_container mt-14 bg-bg-boost-mobile bg-dark-violet px-5 py-16 -mb-1 bg-no-repeat bg-cover  bg-boost-position">
         <h1 className="boost_heading text-xl text-white font-bold">
           Boost your links today
         </h1>
