@@ -36,8 +36,8 @@ const Statics = () => {
           statistics dashboard.
         </p>
       </div>
-      <div className="mt-14 md:flex-row flex md:px-16 flex-col items-center md:items-start justify-center px-5">
-        <div className="cards_separator w-1 bg-cyan h-full absolute z-0 mt-16"></div>
+      <div className="mt-14 md:flex-row flex md:px-16 flex-col items-center md:items-start justify-center px-5 gap-5 ">
+        <div className="cards_separator w-1 bg-cyan h-full absolute z-0 mt-16 md:mt-0 md:w-4/5 md:h-2 md:self-center"></div>
         {cardData.map((e, i) => (
           <StaticsCard data={e} key={i} />
         ))}

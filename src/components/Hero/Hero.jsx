@@ -12,7 +12,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="hero_info px-5 md:px-0 md:items-start flex flex-col items-center mt-6 md:justify-center md:pe-4 md:m-0 md:me-16">
+        <div className="hero_info px-5 md:px-0 md:items-start flex flex-col items-center mt-6 md:justify-center md:pe-4 md:m-0 md:me-16 text-center md:text-start">
           <h1 className="hero_title text-3xl font-bold text-very-dark-violet">
             More than just shorter links
           </h1>
