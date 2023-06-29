@@ -2,7 +2,9 @@ import PropTypes from "prop-types";
 
 const StaticsCard = ({ data }) => {
   return (
-    <div className="statistic_card bg-white rounded-md flex flex-col items-center ">
+    <div
+      className={`statistic_card mt-16 bg-white rounded-md flex flex-col items-center min-h-[13.8rem] md:mt-${data.margin} z-50 `}
+    >
       <div className="icon_container rounded-full bg-dark-violet  p-4 -mt-8">
         <img
           src={data.image}
@@ -11,7 +13,7 @@ const StaticsCard = ({ data }) => {
         />
       </div>
 
-      <div className="card_container flex flex-col items-center mt-7 px-5 pb-5">
+      <div className="statistics_card-content flex flex-col text-center md:text-start mt-7 px-5 pb-5">
         <h1 className="card_title text-base font-bold text-very-dark-violet">
           {data.title}
         </h1>
@@ -25,6 +27,7 @@ const StaticsCard = ({ data }) => {
 
 StaticsCard.propTypes = {
   data: PropTypes.shape({
+    margin: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,

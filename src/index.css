@@ -7,6 +7,9 @@
 a {
   display: inline-block;
 }
+* {
+  box-sizing: border-box;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,19 +1,22 @@
-import StaticsCard from "./StaticsCard/StaticsCard";
+import StaticsCard from "./StatisticsCard/StatisticsCard";
 
 const cardData = [
   {
+    margin: 0,
     image: "../../../src/assets/icon-brand-recognition.svg",
     title: "Brand Recognition",
     description:
       "Boost your brand recognition with each click.Generic links don't mean a things.branded links help instil confidence in your content",
   },
   {
+    margin: 8,
     image: "../../../src/assets/icon-detailed-records.svg",
     title: "Detailed Records",
     description:
       "Gain insight into who is clicking your links.Knowing when and where people engage with your content helps inform better decision.",
   },
   {
+    margin: 16,
     image: "../../../src/assets/icon-fully-customizable.svg",
     title: "Fully Customizable",
     description:
@@ -24,26 +27,19 @@ const cardData = [
 const Statics = () => {
   return (
     <section className="statics mt-16 pt-1 text-center text-xs  leading-5">
-      <div className="statics_container px-5">
+      <div className="statics_container md:px-40 px-5">
         <h1 className=" text-xl  font-bold text-very-dark-violet">
           Advanced Statistics
         </h1>
-        <p className="mt-3">
+        <p className="mt-3 ">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
       </div>
-      <div className="mt-14">
+      <div className="mt-14 md:flex-row flex md:px-16 flex-col items-center md:items-start justify-center px-5">
+        <div className="cards_separator w-1 bg-cyan h-full absolute z-0 mt-16"></div>
         {cardData.map((e, i) => (
-          <div
-            key={i}
-            className="cards_container flex flex-col items-center  px-5"
-          >
-            {i !== 0 && (
-              <div className="cards_separator w-1 bg-cyan h-16"></div>
-            )}
-            <StaticsCard data={e} key={i} />
-          </div>
+          <StaticsCard data={e} key={i} />
         ))}
       </div>
 
