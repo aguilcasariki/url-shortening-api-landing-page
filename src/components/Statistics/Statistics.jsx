@@ -2,21 +2,21 @@ import StaticsCard from "./StatisticsCard/StatisticsCard";
 
 const cardData = [
   {
-    margin: 0,
+    margin: "md:mt-0",
     image: "../../../src/assets/icon-brand-recognition.svg",
     title: "Brand Recognition",
     description:
       "Boost your brand recognition with each click.Generic links don't mean a things.branded links help instil confidence in your content",
   },
   {
-    margin: 8,
+    margin: "md:mt-8",
     image: "../../../src/assets/icon-detailed-records.svg",
     title: "Detailed Records",
     description:
       "Gain insight into who is clicking your links.Knowing when and where people engage with your content helps inform better decision.",
   },
   {
-    margin: 16,
+    margin: "md:mt-16",
     image: "../../../src/assets/icon-fully-customizable.svg",
     title: "Fully Customizable",
     description:
@@ -43,7 +43,7 @@ const Statics = () => {
         ))}
       </div>
 
-      <div className="boost_container mt-14 bg-bg-boost-mobile bg-dark-violet px-5 py-16 -mb-1 bg-no-repeat bg-cover  bg-boost-position">
+      <div className="boost_container mt-14 bg-boost-mobile bg-dark-violet px-5 py-16 -mb-1 bg-no-repeat bg-cover  bg-boost-position md:bg-boost-desktop md:bg-position-none">
         <h1 className="boost_heading text-xl text-white font-bold">
           Boost your links today
         </h1>
