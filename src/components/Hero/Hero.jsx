@@ -1,4 +1,5 @@
 import HeroImg from "../../../src/assets/illustration-working.svg";
+import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 
 const Hero = () => {
   return (
@@ -20,10 +21,11 @@ const Hero = () => {
             Build your brand's recognition and get detailed insights and how
             your links are performing.
           </p>
-          <a href="" className="shorten_link mt-5">
-            <button className="hero_button  rounded-full bg-cyan w-full py-2 text-white text-sm font-medium px-8">
-              Get Started
-            </button>
+          <a href="#shorten" className="shorten_link mt-5">
+            <CallToActionBtn
+              styles="rounded-full w-full py-2 text-sm font-medium px-8"
+              label="Get Started"
+            />
           </a>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logo from "../Logo/Logo";
-import MenuLinkList from "../MenuLinkList/MenuLinkList";
+import MenuLinkList from "./MenuLinkList/MenuLinkList";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -9,7 +9,7 @@ const Shorten = () => {
     setValidValue(!validValue);
   };
   return (
-    <section className="shorten mt-16">
+    <section className="shorten mt-16" id="shorten">
       <div className="shorten_container px-5 pt-1 -mt-32 md:px-16">
         <div className="shorten_form_container py-4 px-5 md:py-8 md:px-10 bg-dark-violet bg-shorten-mobile bg-no-repeat bg-cover bg-position-shorten md:bg-position-none md:bg-shorten-desktop rounded-md">
           <form
