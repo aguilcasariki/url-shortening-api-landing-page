@@ -1,3 +1,4 @@
+import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 import StaticsCard from "./StatisticsCard/StatisticsCard";
 
 const cardData = [
@@ -47,10 +48,14 @@ const Statics = () => {
         <h1 className="boost_heading text-xl text-white font-bold">
           Boost your links today
         </h1>
-        <a href="" className="shorten_link mt-3">
-          <button className="boost_button  rounded-full bg-cyan w-full py-2  text-white text-sm font-medium px-8">
-            Get Started
-          </button>
+        <a
+          href="#shorten"
+          className="shorten_link mt-5 hover:bg-white rounded-full"
+        >
+          <CallToActionBtn
+            styles="rounded-full w-full py-2 text-sm font-medium px-8"
+            label="Get Started"
+          />
         </a>
       </div>
     </section>
