@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ShortenCard from "./ShortenCard/ShortenCard";
+import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 
 const Shorten = () => {
   const [validValue, setValidValue] = useState(true);
@@ -33,12 +34,11 @@ const Shorten = () => {
                 Please add a link
               </span>
             </div>
-            <button
-              type="submit"
-              className="rounded-md mt-3 bg-cyan w-full md:w-1/4 py-2 text-white text-sm font-medium md:mt-0 md:ms-3"
-            >
-              Shorten it!
-            </button>
+            <CallToActionBtn
+              isSubmit={true}
+              styles="rounded-md mt-3 w-full md:w-1/4 py-2 text-sm font-medium md:mt-0 md:ms-3"
+              label="Shorten it!"
+            />
           </form>
         </div>
         <ShortenCard />

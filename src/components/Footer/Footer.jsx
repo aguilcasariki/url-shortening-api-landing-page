@@ -1,4 +1,5 @@
 import Logo from "../Logo/Logo";
+import FacebookIcon from "../../assets/icon-facebook.svg";
 
 const serviceLinks = [
   {
@@ -14,24 +15,7 @@ const serviceLinks = [
     links: ["About", "Our Team", "Careers", "Contact"],
   },
 ];
-const mediaLinks = [
-  {
-    path: "../../../src/assets/icon-facebook.svg",
-    alt: "Facebook Link",
-  },
-  {
-    path: "../../../src/assets/icon-twitter.svg",
-    alt: "Facebook Link",
-  },
-  {
-    path: "../../../src/assets/icon-pinterest.svg",
-    alt: "Facebook Link",
-  },
-  {
-    path: "../../../src/assets/icon-instagram.svg",
-    alt: "Facebook Link",
-  },
-];
+const mediaLinks = [FacebookIcon];
 const Footer = () => {
   return (
     <section className="footer  bg-very-dark-violet">
@@ -44,7 +28,7 @@ const Footer = () => {
                 {e.title}
               </h2>
               {e.links.map((e, i) => (
-                <li key={i} className="service_link mb-2">
+                <li key={i} className="service_link mb-2 hover:text-cyan">
                   <a href="">{e}</a>
                 </li>
               ))}
@@ -54,9 +38,7 @@ const Footer = () => {
         <ul className="flex bg-black justify-between w-full mt-5 md:flex-row flex-col md:w-auto md:gap-5 md:mt-0">
           {mediaLinks.map((e, i) => (
             <li key={i}>
-              <a href="">
-                <img src={e.path} alt={e.alt} />
-              </a>
+              <a href="">{e.path}</a>
             </li>
           ))}
         </ul>

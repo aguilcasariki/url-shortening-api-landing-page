@@ -17,6 +17,7 @@ export default {
       "position-none": "unset",
     },
     colors: {
+      "CTA-hover-bg": "#94E7E7",
       "bg-app": "#F0F1F6",
       white: "#ffffff",
       cyan: "hsl(180, 66%, 49%)",

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import CallToActionBtn from "../../CallToActionBtn/CallToActionBtn";
 
 const ShortenCard = ({ originalLink, shortenLink }) => {
   return (
@@ -10,12 +11,10 @@ const ShortenCard = ({ originalLink, shortenLink }) => {
       <div className="shorten_link_button flex flex-col md:flex-row px-3 md:items-center gap-5">
         <p className=" text-xs text-cyan">{shortenLink}shortenLink</p>
 
-        <button
-          type="button"
-          className="w-full rounded-md  bg-cyan  py-2 text-white text-xs font-medium mt-2 md:m-0 md:px-5 self-center"
-        >
-          Copy
-        </button>
+        <CallToActionBtn
+          label="Copy"
+          styles="w-full rounded-md  py-2 text-xs font-medium mt-2 md:m-0 md:px-5 self-center"
+        />
       </div>
     </div>
   );
