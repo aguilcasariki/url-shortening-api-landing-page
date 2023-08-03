@@ -14,7 +14,7 @@ const StaticsCard = ({ data }) => {
       </div>
 
       <div className="statistics_card-content flex flex-col text-center md:text-start mt-7 px-5 pb-5">
-        <h1 className="card_title text-base font-bold text-very-dark-violet">
+        <h1 className="card_title text-base font-bold text-very-dark-violet text-center lg:text-start">
           {data.title}
         </h1>
         <p className="card_description mt-2 text-xs leading-5">

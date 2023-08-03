@@ -7,21 +7,21 @@ const cardData = [
     image: "../../../src/assets/icon-brand-recognition.svg",
     title: "Brand Recognition",
     description:
-      "Boost your brand recognition with each click.Generic links don't mean a things.branded links help instil confidence in your content",
+      "Boost your brand recognition with each click. Generic links don't mean a things. Branded links help instil confidence in your content",
   },
   {
     margin: "md:mt-8",
     image: "../../../src/assets/icon-detailed-records.svg",
     title: "Detailed Records",
     description:
-      "Gain insight into who is clicking your links.Knowing when and where people engage with your content helps inform better decision.",
+      "Gain insight into who is clicking your links. Knowing when and where people engage with your content helps inform better decision.",
   },
   {
     margin: "md:mt-16",
     image: "../../../src/assets/icon-fully-customizable.svg",
     title: "Fully Customizable",
     description:
-      "Improve brand awareness and content discoverability through customizable links,supercharging audience engagement.",
+      "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
   },
 ];
 
@@ -37,8 +37,8 @@ const Statics = () => {
           statistics dashboard.
         </p>
       </div>
-      <div className="mt-14 md:flex-row flex md:px-16 flex-col items-center md:items-start justify-center px-5 gap-5 ">
-        <div className="cards_separator w-1 bg-cyan h-full absolute z-0 mt-16 md:mt-0 md:w-4/5 md:h-2 md:self-center"></div>
+      <div className="mt-14 md:flex-row flex md:px-16 lg:px-48 flex-col items-center md:items-start justify-center px-5 gap-5 ">
+        <div className="cards_separator w-1 bg-cyan h-full absolute z-0 mt-16 md:mt-0 md:w-4/5 md:h-2 md:self-center lg:w-3/5"></div>
         {cardData.map((e, i) => (
           <StaticsCard data={e} key={i} />
         ))}

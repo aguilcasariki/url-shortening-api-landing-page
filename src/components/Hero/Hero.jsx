@@ -4,7 +4,7 @@ import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero_wrapper overflow-hidden bg-white md:flex-row-reverse md:flex md:pt-7 pb-32 md:ps-16 w-full justify-around">
+      <div className="hero_wrapper overflow-hidden bg-white md:flex-row-reverse md:flex md:pt-7 pb-32 md:ps-16 lg:ps-48 w-full justify-around">
         <div className="hero_img_container">
           <img
             src={HeroImg}
