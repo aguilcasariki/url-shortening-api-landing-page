@@ -24,7 +24,7 @@ const mediaLinks = [
 const Footer = () => {
   return (
     <section className="footer  bg-very-dark-violet">
-      <div className="footer_container  text-center flex-col flex items-center bg-very-dark-violet py-10 text-xs px-16 md:flex-row justify-evenly md:items-start">
+      <div className="footer_container  text-center flex-col flex items-center bg-very-dark-violet py-10 text-xs md:px-16  px-5  lg:px-44 md:flex-row justify-between xl:justify-around md:items-start">
         <Logo color="#ffffff" />
         <ul className="flex md:flex-row flex-col md:gap-7">
           {serviceLinks.map((e, i) => (
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           ))}
         </ul>
-        <ul className="flex bg-black justify-between w-full mt-5 md:flex-row flex-col md:w-auto md:gap-5 md:mt-0">
+        <ul className="flex bg-black justify-center w-full mt-5 flex-row gap-5 md:w-auto md:mt-0">
           {mediaLinks.map((e, i) => (
             <li key={i}>
               <a href="#">

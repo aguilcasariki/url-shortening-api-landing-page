@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav_wrapper flex flex-col items-center bg-white md:px-16 pt-5 px-5 pb-3 lg:px-48">
+    <div className="nav_wrapper flex flex-col items-center bg-white md:px-16 pt-5 px-5 pb-3 lg:px-44">
       <nav className="navbar w-full">
         <div className="nabvar_container flex  md:justify-normal justify-between items-end">
           <Logo />
