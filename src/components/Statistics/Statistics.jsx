@@ -50,7 +50,7 @@ const Statics = () => {
         </h1>
         <a
           href="#shorten"
-          className="shorten_link mt-5 hover:bg-white rounded-full"
+          className="shorten_link mt-5 hover:bg-white focus:bg-white rounded-full"
         >
           <CallToActionBtn
             styles="rounded-full w-full py-2 text-sm font-medium px-8"

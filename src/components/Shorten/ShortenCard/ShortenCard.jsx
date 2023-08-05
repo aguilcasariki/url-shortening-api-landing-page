@@ -27,7 +27,7 @@ const ShortenCard = ({ originalLink, shortenUrl }) => {
       <div className="shorten_link_button flex flex-col md:flex-row px-3 md:items-center gap-5">
         <a
           href={shortenUrl}
-          className="text-xs text-cyan whitespace-nowrap underline hover:text-CTA-hover-bg"
+          className="text-xs text-cyan whitespace-nowrap underline hover:text-CTA-hover-bg focus:text-CTA-hover-bg"
         >
           {shortenUrl}
         </a>

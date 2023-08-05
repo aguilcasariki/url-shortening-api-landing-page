@@ -33,7 +33,10 @@ const Footer = () => {
                 {e.title}
               </h2>
               {e.links.map((e, i) => (
-                <li key={i} className="service_link mb-2 hover:text-cyan">
+                <li
+                  key={i}
+                  className="service_link mb-2 hover:text-cyan focus:text-cyan"
+                >
                   <a href="">{e}</a>
                 </li>
               ))}

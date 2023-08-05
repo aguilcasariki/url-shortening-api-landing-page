@@ -9,7 +9,7 @@ const MenuLinkList = () => {
         {serviceLinks.map((e, i) => (
           <li
             key={i}
-            className="service_link w-full text-center mt-5 md:mt-0 hover:text-very-dark-blue"
+            className="service_link w-full text-center mt-5 md:mt-0 hover:text-very-dark-blue focus:text-very-dark-blue"
           >
             <a href="#" key={i}>
               {e}
@@ -20,7 +20,7 @@ const MenuLinkList = () => {
 
       <hr className="w-full border-0 border-t-[1px] border-gray mt-5 md:hidden" />
       <div className="menu_btns md:flex items-center gap-5 justify-end">
-        <li className="service_link w-full text-center mt-5 md:mt-0 hover:text-very-dark-blue">
+        <li className="service_link w-full text-center mt-5 md:mt-0 hover:text-very-dark-blue focus:text-very-dark-blue">
           <a href="#">Login</a>
         </li>
         <CallToActionBtn
