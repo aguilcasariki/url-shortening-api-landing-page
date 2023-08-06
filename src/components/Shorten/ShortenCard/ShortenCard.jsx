@@ -24,26 +24,18 @@ const ShortenCard = ({ originalLink, shortenUrl }) => {
     <div className="card_container flex flex-col bg-white rounded-md mt-5 py-2 md:flex-row md:justify-between md:items-center shadow-2xl">
       <div className="original_link-container mx-3 overflow-hidden">
         {/* Original link */}
-        <a
-          href={originalLink}
-          className="text-xs text-very-dark-violet whitespace-nowrap"
-        >
+        <p className="text-xs text-very-dark-violet whitespace-nowrap">
           {originalLink}
-        </a>
+        </p>
       </div>
 
       <hr className="w-full border-0 border-t-[1px] border-gray my-2 md:hidden" />
 
       <div className="shorten_link_button flex flex-col md:flex-row px-3 md:items-center gap-5">
         {/* Shortened link */}
-        <a
-          href={shortenUrl}
-          target="_blank"
-          rel="noopener noreferrer" // rel attribute for security when opening in a new tab
-          className="text-xs text-cyan whitespace-nowrap underline hover:text-CTA-hover-bg focus:text-CTA-hover-bg"
-        >
+        <p className="text-xs text-cyan whitespace-nowrap underline hover:text-CTA-hover-bg focus:text-CTA-hover-bg">
           {shortenUrl}
-        </a>
+        </p>
 
         {/* CallToActionBtn component for the "Copy" button */}
         <CallToActionBtn

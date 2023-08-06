@@ -21,7 +21,7 @@ const Hero = () => {
             Build your brand's recognition and get detailed insights and how
             your links are performing.
           </p>
-          <a href="#shorten" className="shorten_link mt-5">
+          <a href="#app_shorten" className="shorten_link mt-5" id="app_shorten">
             <CallToActionBtn
               styles="rounded-full w-full py-2 text-sm font-medium px-8"
               label="Get Started"

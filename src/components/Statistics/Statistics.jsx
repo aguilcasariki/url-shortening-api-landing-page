@@ -49,7 +49,7 @@ const Statics = () => {
           Boost your links today
         </h1>
         <a
-          href="#shorten"
+          href="#app_shorten"
           className="shorten_link mt-5 hover:bg-white focus:bg-white rounded-full"
         >
           <CallToActionBtn
