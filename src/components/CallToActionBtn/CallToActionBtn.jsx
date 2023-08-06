@@ -6,9 +6,11 @@ const CallToActionBtn = ({
   label,
   isSubmit,
   clickAction,
+  isDisabled,
 }) => {
   return (
     <button
+      disabled={isDisabled}
       onClick={clickAction}
       type={isSubmit ? "submit" : undefined}
       className={`${defaultStyles} ${styles}`}
@@ -16,10 +18,6 @@ const CallToActionBtn = ({
       {label}
     </button>
   );
-};
-
-CallToActionBtn.defaultProps = {
-  isSubmit: false,
 };
 
 export default CallToActionBtn;

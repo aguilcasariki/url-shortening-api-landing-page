@@ -3,6 +3,7 @@ import CallToActionBtn from "../../CallToActionBtn/CallToActionBtn";
 import { useState, useCallback } from "react";
 
 const ShortenCard = ({ originalLink, shortenUrl }) => {
+  const isGenerating = shortenUrl === "Generating short link ...";
   // State to track if the link has been copied
   const [isCopied, setIsCopied] = useState(false);
 
@@ -33,25 +34,18 @@ const ShortenCard = ({ originalLink, shortenUrl }) => {
 
       <div className="shorten_link_button flex flex-col md:flex-row px-3 md:items-center gap-5">
         {/* Shortened link */}
-        <p className="text-xs text-cyan whitespace-nowrap underline hover:text-CTA-hover-bg focus:text-CTA-hover-bg">
-          {shortenUrl}
-        </p>
+        <p className="text-xs text-cyan whitespace-nowrap">{shortenUrl}</p>
 
         {/* CallToActionBtn component for the "Copy" button */}
         <CallToActionBtn
+          isDisabled={isGenerating}
           clickAction={handleClick}
-          label={isCopied ? "Copied!" : "Copy"}
+          label={isCopied ? "Copied!" : isGenerating ? "Generating..." : "Copy"}
           styles="w-full rounded-md py-2 text-xs font-medium mt-2 md:m-0 md:px-5 self-center"
         />
       </div>
     </div>
   );
-};
-
-// Prop types to validate the expected props
-ShortenCard.propTypes = {
-  originalLink: PropTypes.string.isRequired,
-  shortenUrl: PropTypes.string.isRequired,
 };
 
 export default ShortenCard;

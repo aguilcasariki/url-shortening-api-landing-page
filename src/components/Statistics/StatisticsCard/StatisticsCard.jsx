@@ -25,13 +25,4 @@ const StaticsCard = ({ data }) => {
   );
 };
 
-StaticsCard.propTypes = {
-  data: PropTypes.shape({
-    margin: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
 export default StaticsCard;

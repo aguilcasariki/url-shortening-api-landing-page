@@ -15,6 +15,7 @@ const Shorten = () => {
     refetchOnWindowFocus: false, // Disable automatic refetch on window focus
     enabled: false,
     onSuccess: (newData) => {
+      cards.shift();
       const { result, error } = newData;
       if (result) {
         // Add the card with the original link and shorten link to the cards list
@@ -43,6 +44,13 @@ const Shorten = () => {
     event.preventDefault();
     // Check if the input field is empty
     inputValue === "" ? setShortenError("Please add a link") : refetch();
+    setCards([
+      {
+        originalLink: inputValue,
+        shortenLink: "Generating short link ...",
+      },
+      ...cards,
+    ]);
   };
 
   return (
