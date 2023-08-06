@@ -24,7 +24,7 @@ const mediaLinks = [
 const Footer = () => {
   return (
     <section className="footer  bg-very-dark-violet">
-      <div className="footer_container  text-center flex-col flex items-center bg-very-dark-violet py-10 text-xs md:px-16  px-5  lg:px-44 md:flex-row justify-between xl:justify-around md:items-start">
+      <div className="footer_container  text-center flex-col flex items-center bg-very-dark-violet py-10 text-xs md:px-16  px-5  lg:px-32 xl:px-44 md:flex-row justify-between xl:justify-around md:items-start">
         <Logo color="#ffffff" />
         <ul className="flex md:flex-row flex-col md:gap-7">
           {serviceLinks.map((e, i) => (
