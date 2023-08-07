@@ -4,21 +4,21 @@ import StaticsCard from "./StatisticsCard/StatisticsCard";
 const cardData = [
   {
     margin: "md:mt-0",
-    image: "../../../src/assets/icon-brand-recognition.svg",
+    image: "../../assets/icon-brand-recognition.svg",
     title: "Brand Recognition",
     description:
       "Boost your brand recognition with each click. Generic links don't mean a things. Branded links help instil confidence in your content",
   },
   {
     margin: "md:mt-8",
-    image: "../../../src/assets/icon-detailed-records.svg",
+    image: "../../assets/icon-detailed-records.svg",
     title: "Detailed Records",
     description:
       "Gain insight into who is clicking your links. Knowing when and where people engage with your content helps inform better decision.",
   },
   {
     margin: "md:mt-16",
-    image: "../../../src/assets/icon-fully-customizable.svg",
+    image: "../../assets/icon-fully-customizable.svg",
     title: "Fully Customizable",
     description:
       "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
