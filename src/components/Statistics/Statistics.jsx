@@ -1,24 +1,27 @@
 import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 import StaticsCard from "./StatisticsCard/StatisticsCard";
+import Brand from "../../../src/assets/icon-brand-recognition.svg";
+import Detailed from "../../../src/assets/icon-detailed-records.svg";
+import Fully from "../../../src/assets/icon-fully-customizable.svg";
 
 const cardData = [
   {
     margin: "md:mt-0",
-    image: "src/assets/icon-brand-recognition.svg",
+    image: Brand,
     title: "Brand Recognition",
     description:
       "Boost your brand recognition with each click. Generic links don't mean a things. Branded links help instil confidence in your content",
   },
   {
     margin: "md:mt-8",
-    image: "src/assets/icon-detailed-records.svg",
+    image: Detailed,
     title: "Detailed Records",
     description:
       "Gain insight into who is clicking your links. Knowing when and where people engage with your content helps inform better decision.",
   },
   {
     margin: "md:mt-16",
-    image: "src/assets/icon-fully-customizable.svg",
+    image: Fully,
     title: "Fully Customizable",
     description:
       "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
@@ -44,7 +47,7 @@ const Statics = () => {
         ))}
       </div>
 
-      <div className="boost_container mt-14 bg-boost-mobile bg-dark-violet px-5 py-16 -mb-1 bg-no-repeat bg-cover  bg-boost-position md:bg-boost-desktop md:bg-position-none">
+      <div className="boost_container mt-14  bg-dark-violet px-5 py-16 -mb-1">
         <h1 className="boost_heading text-xl text-white font-bold">
           Boost your links today
         </h1>

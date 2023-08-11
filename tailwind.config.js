@@ -2,20 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      backgroundImage: {
-        "boost-desktop": "url('./src/assets/bg-boost-desktop.svg')",
-        "shorten-desktop": "url('./src/assets/bg-shorten-desktop.svg')",
-        "boost-mobile": "url('./src/assets/bg-boost-mobile.svg')",
-        "shorten-mobile": "url('./src/assets/bg-shorten-mobile.svg')",
-      },
-    },
-    backgroundPosition: {
-      "position-boost": "0rem -0.8rem",
-
-      "position-shorten": "2.5rem -3.5rem",
-      "position-none": "unset",
-    },
     colors: {
       "CTA-hover-bg": "#94E7E7",
       "bg-app": "#F0F1F6",
