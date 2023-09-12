@@ -31,8 +31,8 @@ Url Shortening Api Landing Page
 
 ### Links
 
-- Github Code URL: ()
-- Live Site URL: ()
+- Github Code URL: (https://github.com/aguilcasariki/url-shortening-api-landing-page)
+- Live Site URL: (https://shortly-url-shortening-api-landing-page.vercel.app/)
 
 ## My process
 
