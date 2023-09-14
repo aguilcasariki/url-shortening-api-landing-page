@@ -1,8 +1,8 @@
 import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 import StaticsCard from "./StatisticsCard/StatisticsCard";
-import Brand from "../../../src/assets/icon-brand-recognition.svg";
-import Detailed from "../../../src/assets/icon-detailed-records.svg";
-import Fully from "../../../src/assets/icon-fully-customizable.svg";
+import Brand from "/icon-brand-recognition.svg";
+import Detailed from "/icon-detailed-records.svg";
+import Fully from "/icon-fully-customizable.svg";
 
 const cardData = [
   {
