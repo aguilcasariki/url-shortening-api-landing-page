@@ -26,8 +26,8 @@ Url Shortening Api Landing Page
 
 ### Screenshot
 
-![Screenshot](./src/assets/urlShorteningApiLandingPage.png)
-![Screenshot](./src/assets/screencapture-url-shortening-api-landing-page-ihzpvuwtd-aguilcasariki-vercel-app-2023-09-12-11_27_44.png)
+![Screenshot](/urlShorteningApiLandingPage.png)
+![Screenshot](/screencapture-url-shortening-api-landing-page-ihzpvuwtd-aguilcasariki-vercel-app-2023-09-12-11_27_44.png)
 
 ### Links
 

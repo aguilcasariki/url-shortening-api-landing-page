@@ -1,4 +1,4 @@
-import HeroImg from "../../../src/assets/illustration-working.svg";
+import HeroImg from "/illustration-working.svg";
 import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
 
 const Hero = () => {
