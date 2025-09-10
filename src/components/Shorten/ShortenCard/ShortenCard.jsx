@@ -30,7 +30,7 @@ const ShortenCard = ({ originalLink, shortenUrl }) => {
         </p>
       </div>
 
-      <hr className="w-full border-0 border-t-[1px] border-gray my-2 md:hidden" />
+      <hr className="w-full border-0 border-t border-gray my-2 md:hidden" />
 
       <div className="shorten_link_button flex flex-col md:flex-row px-3 md:items-center gap-5">
         {/* Shortened link */}

@@ -18,7 +18,7 @@ const MenuLinkList = () => {
         ))}
       </div>
 
-      <hr className="w-full border-0 border-t-[1px] border-gray mt-5 md:hidden" />
+      <hr className="w-full border-0 border-t border-gray mt-5 md:hidden" />
       <div className="menu_btns md:flex items-center gap-5 justify-end">
         <li className="service_link w-full text-center mt-5 md:mt-0 md:hover:text-very-dark-blue  md:focus:text-very-dark-blue">
           <a href="#">Login</a>
