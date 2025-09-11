@@ -3,8 +3,8 @@
 
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "https://cleanuri.com/:path*"
+      "source": "/api/v1/shorten",
+      "destination": "https://cleanuri.com/api/v1/shorten"
     },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
