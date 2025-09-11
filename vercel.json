@@ -5,6 +5,7 @@
     {
       "source": "/api/:path*",
       "destination": "https://cleanuri.com/:path*"
-    }
+    },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
