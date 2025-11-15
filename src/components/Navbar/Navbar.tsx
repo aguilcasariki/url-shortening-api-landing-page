@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Logo from "../Logo/Logo";
-import MenuLinkList from "./MenuLinkList/MenuLinkList";
+import Logo from "../Logo/Logo.tsx";
+import MenuLinkList from "./MenuLinkList/MenuLinkList.tsx";
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Navbar = (): React.ReactElement => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const handleToggleMenu = () => {
+  const handleToggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
 

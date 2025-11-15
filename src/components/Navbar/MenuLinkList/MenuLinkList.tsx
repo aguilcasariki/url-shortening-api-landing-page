@@ -1,8 +1,8 @@
-import CallToActionBtn from "../../CallToActionBtn/CallToActionBtn";
+import CallToActionBtn from "../../CallToActionBtn/CallToActionBtn.tsx";
 
-const serviceLinks = ["Features", "Pricing", "Resources"];
+const serviceLinks: string[] = ["Features", "Pricing", "Resources"];
 
-const MenuLinkList = () => {
+const MenuLinkList = (): React.ReactElement => {
   return (
     <ul className="menu_link-list flex flex-col md:flex-row items-center md:justify-between md:text-xs text-white md:text-gray w-full">
       <div className="menu_links md:flex items-center md:gap-5">

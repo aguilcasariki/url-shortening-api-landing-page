@@ -1,7 +1,12 @@
-import Logo from "../Logo/Logo";
-import MediaIcon from "../Footer/MediaIcon/MediaIcon";
+import Logo from "../Logo/Logo.tsx";
+import MediaIcon from "../Footer/MediaIcon/MediaIcon.tsx";
 
-const serviceLinks = [
+interface ServiceLink {
+  title: string;
+  links: string[];
+}
+
+const serviceLinks: ServiceLink[] = [
   {
     title: "Features",
     links: ["Link Shortening", "Branded Links", "Analytics"],
@@ -21,7 +26,8 @@ const mediaLinks = [
   "M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z",
   "M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z",
 ];
-const Footer = () => {
+
+const Footer = (): React.ReactElement => {
   return (
     <section className="footer  bg-very-dark-violet">
       <div className="footer_container  text-center flex-col flex items-center bg-very-dark-violet py-10 text-xs md:px-16  px-5  lg:px-32 xl:px-44 md:flex-row justify-between xl:justify-around md:items-start">

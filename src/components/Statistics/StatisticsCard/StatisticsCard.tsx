@@ -1,6 +1,15 @@
-import PropTypes from "prop-types";
+interface StatisticsData {
+  image: string;
+  title: string;
+  description: string;
+  margin?: string;
+}
 
-const StaticsCard = ({ data }) => {
+interface StatisticsCardProps {
+  data: StatisticsData;
+}
+
+const StaticsCard = ({ data }: StatisticsCardProps): React.ReactElement => {
   return (
     <div
       className={`statistic_card mt-16 bg-white rounded-md flex flex-col items-center min-h-[13.8rem] md:min-h-[18.3rem] shadow-lg  ${data.margin} xl:min-h-0  z-50 `}

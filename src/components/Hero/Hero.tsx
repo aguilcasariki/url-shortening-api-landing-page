@@ -1,7 +1,7 @@
 import HeroImg from "/illustration-working.svg";
-import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
+import CallToActionBtn from "../CallToActionBtn/CallToActionBtn.tsx";
 
-const Hero = () => {
+const Hero = (): React.ReactElement => {
   return (
     <section className="hero" id="hero">
       <div className="hero_wrapper overflow-hidden bg-white md:flex-row-reverse md:flex md:pt-7 pb-32 md:ps-16 lg:ps-32 xl:ps-44 w-full justify-around">

@@ -1,10 +1,17 @@
-import CallToActionBtn from "../CallToActionBtn/CallToActionBtn";
-import StaticsCard from "./StatisticsCard/StatisticsCard";
+import CallToActionBtn from "../CallToActionBtn/CallToActionBtn.tsx";
+import StaticsCard from "./StatisticsCard/StatisticsCard.tsx";
 import Brand from "/icon-brand-recognition.svg";
 import Detailed from "/icon-detailed-records.svg";
 import Fully from "/icon-fully-customizable.svg";
 
-const cardData = [
+interface CardData {
+  margin: string;
+  image: string;
+  title: string;
+  description: string;
+}
+
+const cardData: CardData[] = [
   {
     margin: "md:mt-0",
     image: Brand,
@@ -28,7 +35,7 @@ const cardData = [
   },
 ];
 
-const Statics = () => {
+const Statics = (): React.ReactElement => {
   return (
     <section className="statics mt-16 pt-1 text-center text-xs  leading-5">
       <div className="statics_container md:px-40 px-5">

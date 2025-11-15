@@ -1,4 +1,8 @@
-const MediaIcon = ({ iconD }) => {
+interface MediaIconProps {
+  iconD: string;
+}
+
+const MediaIcon = ({ iconD }: MediaIconProps): React.ReactElement => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
