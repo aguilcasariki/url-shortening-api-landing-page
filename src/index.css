@@ -1,3 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-CTA-hover-bg: #94e7e7;
+  --color-bg-app: #f0f1f6;
+  --color-white: #ffffff;
+  --color-cyan: hsl(180, 66%, 49%);
+  --color-dark-violet: hsl(257, 27%, 26%);
+  --color-red: hsl(0, 87%, 67%);
+  --color-gray: hsl(0, 0%, 75%);
+  --color-grayish-violet: hsl(257, 7%, 63%);
+  --color-very-dark-blue: hsl(255, 11%, 22%);
+  --color-very-dark-violet: hsl(260, 8%, 14%);
+}
+
 :root {
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
@@ -10,6 +25,3 @@ a {
 * {
   box-sizing: border-box;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
