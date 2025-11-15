@@ -1,14 +1,21 @@
-import PropTypes from "prop-types";
-import CallToActionBtn from "../../CallToActionBtn/CallToActionBtn";
+import CallToActionBtn from "../../CallToActionBtn/CallToActionBtn.tsx";
 import { useState, useCallback } from "react";
 
-const ShortenCard = ({ originalLink, shortenUrl }) => {
+interface ShortenCardProps {
+  originalLink: string;
+  shortenUrl: string;
+}
+
+const ShortenCard = ({
+  originalLink,
+  shortenUrl,
+}: ShortenCardProps): React.ReactElement => {
   const isGenerating = shortenUrl === "Generating short link ...";
   // State to track if the link has been copied
-  const [isCopied, setIsCopied] = useState(false);
+  const [isCopied, setIsCopied] = useState<boolean>(false);
 
   // Callback function to handle the click on the "Copy" button
-  const handleClick = useCallback(async () => {
+  const handleClick = useCallback(async (): Promise<void> => {
     try {
       // Use the Clipboard API to copy the shortened link to the clipboard
       await navigator.clipboard.writeText(shortenUrl);
@@ -41,7 +48,7 @@ const ShortenCard = ({ originalLink, shortenUrl }) => {
           isDisabled={isGenerating}
           clickAction={handleClick}
           label={isCopied ? "Copied!" : isGenerating ? "Generating..." : "Copy"}
-          styles="w-full rounded-md py-2 text-xs font-medium mt-2 md:m-0 md:px-5 self-center"
+          styles="w-full rounded-md py-2 text-xs font-medium mt-2 md:m-0 md:px-5 self-center disabled"
         />
       </div>
     </div>
